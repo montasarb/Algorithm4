@@ -1,0 +1,16 @@
+ALGORITHM INSERTION_SORT
+VAR
+i : INTEGER;
+arr : ARRAY_OF INTEGER[];
+BEGIN
+arr := [ 1,8,5,9,6,4,0)]
+    FOR i FROM 1 TO arr.length  DO
+        j:=i-1 ;
+        aux := arr[i]
+        WHILE (j>= 0 and aux< arr[j]) DO
+            arr[j+1]:=arr[j]
+            j:= j-1
+        END_WHILE
+    END_FOR
+    write(arr)
+END
